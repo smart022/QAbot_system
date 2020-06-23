@@ -5,8 +5,10 @@ function gen_sent(user,name,str){
     else
         var $sent = $("<div class='cleft cmsg'></div>")
 
-    
-    $head_icon.attr('src',"http://img2.imgtn.bdimg.com/it/u=3615831237,1510664097&fm=26&gp=0.jpg")
+    //<img src="http://ww1.sinaimg.cn/thumbnail/d3e3f003gy1gg2l3njzrzj207g07g74c.jpg"/>
+    // http://ww1.sinaimg.cn/mw690/d3e3f003gy1gg2l9vogamj2069069t8n.jpg
+    $head_icon.attr('src',"http://ww1.sinaimg.cn/mw690/d3e3f003gy1gg2l9vogamj2069069t8n.jpg")
+
     $sent.append($head_icon)
     var $name = $("<span class='name'></span>").text(name)
     $sent.append($name)

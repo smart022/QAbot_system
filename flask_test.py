@@ -6,7 +6,7 @@ from elasticsearch import Elasticsearch
 from Utils.Dialog.dialog_current_cot import Dialog_cot
 ## es
 es = Elasticsearch(['http://120.78.222.31:9200/'],port=9200)
-index_name = 'my_index'
+index_name = 'law_qa'
 class Recall:
     def __init__(self,es,index_name):
         self.es = es
