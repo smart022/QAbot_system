@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>聊天机器人</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon-32x32.png') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" href="https://lab.morfans.cn/LiteWebChat_Frame/litewebchat.min.css" rel="stylesheet"/>
+
+    <script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/socket.io/2.3.0/socket.io.slim.js"></script>
+
+    <script type="text/javascript" src="/static/main.js"></script>
+    <style>
+        
+       #form .input-group {
+       position: fixed;
+        bottom: 0;
+        left: 0;
+        }
+        body {
+        scroll-behavior: smooth;
+        }
+        #content { 
+            padding-bottom: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id='app'>
+
+<div id='content'>
+<div class="lite-chatbox">
+</div>
+</div>
+
+<form id='form' action="">
+    <div class="input-group">
+    <input type="text" id="input_txt" class="form-control">
+    <div  class="input-group-append">
+        <button type="submit" id="butt" class="btn btn-primary">发送</button>
+    </div>
+</form>
+</div>
+</div>
+</body>
+</html>
